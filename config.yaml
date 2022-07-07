@@ -1,0 +1,145 @@
+#  Copyright (c) 2022 Robert Bosch Manufacturing Solutions GmbH
+#  Copyright (c) 2022 Contributors to the Eclipse Foundation
+#
+#  See the NOTICE file(s) distributed with this work for additional
+#  information regarding copyright ownership.
+#
+#  This program and the accompanying materials are made available under the
+#  terms of the Apache License, Version 2.0 which is available at
+#  https://www.apache.org/licenses/LICENSE-2.0.
+#
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+#  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+#  License for the specific language governing permissions and limitations
+#  under the License.
+#
+#  SPDX-License-Identifier: Apache-2.0
+
+baseURL: http://eclipse.org/
+languageCode: en-us
+title: Eclipse Tractus-X
+theme: hugo-fresh
+googleAnalytics: # Put in your tracking code without quotes like this: UA-XXXXXX...
+# Disables warnings
+disableKinds:
+- taxonomy
+- taxonomyTerm
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Allows you to write raw html in your md files
+
+params:
+  # Open graph allows easy social sharing. If you don't want it you can set it to false or just delete the variable
+  openGraph: true
+  # Used as meta data; describe your site to make Google Bots happy
+  description:
+  navbarlogo:
+  # Logo (from static/images/logos/___)
+    image: logos/tractusx-dark.svg
+    link: /
+  font:
+    name: "Open Sans"
+    sizes: [400,600]
+  hero:
+    # Main hero title
+    title: Automotive. Ecosystem
+    # Hero subtitle (optional)
+    subtitle: Eclipse Tractus-X provides technology for the Catena-X Ecosystem.	
+    # Button text
+    buttontext: Get started
+    # Where the main hero button links to
+    buttonlink: "#"
+    # Hero image (from static/images/___)
+    image: logos/tractusx-dark.svg
+    # Footer logos (from static/images/logos/clients/___.svg)
+    clientlogos:
+#    - systek
+#    - tribe
+
+  # Customizable navbar. For a dropdown, add a "sublinks" list.
+  navbar:
+  - title: Semantic Layer
+    url: /sldt
+  - title: Registry
+    url: /helm-charts
+  - title: Developer Resources
+    url: /developer-resources
+
+  section1:
+    title: Tractus-X Components
+    subtitle: what is inside
+    tiles:
+    - title: Semantic Layer
+      icon: mouse-globe
+      text: Components supporting the management of the semantics of the ecoystem
+      url: /sldt
+      buttonText: Find out more ...
+    - title: Portal
+      icon: laptop-cloud
+      text: Access the components of the ecosystem
+      url: https://github.com/eclipse-tractusx/portal-frontend
+      buttonText: Find out more ...
+    - title: Helm Repository
+      icon: plug-cloud
+      text: A helm repository to deploy Tractus-X components on a kubernetes cluster
+      url: /helm-charts
+      buttonText: Find out more ...
+  section2:
+    title: Some more details
+    subtitle: 
+    features:
+    - title: Scope
+      text: Eclipse Tractus-X aims at the development of systems in support of the Catena-X network, with focus on quality management, logistics, maintenance, supply chain management and sustainability. In the initial proof-of-concept phase, Eclipse Tractus-X explores possible implementation options for the defined application areas which have been jointly defined. With the help of a networked data infrastructure, these application areas can significantly help to boost productivity and improve sustainability along future value chains. Applications supporting production and development are planned for future phases. The data network will create an important starting point for the industry to respond more efficiently to the challenges of digital transformation and to make better use of the opportunities offered by digitalisation.
+      # Icon (from /images/illustrations/icons/___.svg)
+      icon: laptop-globe
+
+    - title: Details
+      text: The companies involved want to increase the automotive industry’s competitiveness, improve efficiency through industry-specific cooperation and accelerate company processes through standardization and access to information and data. A special focus is also on SMEs, whose active participation is of central importance for the network’s success. That is why Catena-X has been conceived from the outset as an open network with solutions ready for SMEs, where these companies will be able to participate quickly and with little IT infrastructure investment. Tractus-X is meant to be the PoC project of the Catena-X alliance focusing on parts traceability.
+      icon: doc-sync
+
+    - title: License
+      text: The project code is licensed under the Apache License 2.0. Details are defined in the respective component repository.
+      icon: mobile-feed
+  section3:
+  Section4:
+#This activates the message box
+  section5: false
+  footer:
+    # Logo (from /images/logos/___)
+    logo: tractusx-dark.svg
+    # Social Media Title
+    socialmediatitle: Follow Us
+    # Social media links (GitHub, Twitter, etc.). All are optional.
+    socialmedia:
+    - link: https://github.com/eclipse-tractusx
+      # Icons are from Font Awesome
+      icon: github
+    quicklinks:
+      column1:
+        title: "Legal"
+        links:
+        - text: Privacy Policy
+          link: https://www.eclipse.org/legal/privacy.php
+        - text: Terms of Use
+          link: https://www.eclipse.org/legal/termsofuse.php
+        - text: Copyright Agent
+          link: https://www.eclipse.org/legal/copyright.php
+        - text: Apache License 2.0
+          link: https://spdx.org/licenses/Apache-2.0.html
+        - text: Legal Resources
+          link: https://www.eclipse.org/legal/
+      column2:
+        title: "Security"
+        links:
+        - text: Eclipse Security
+          link: https://www.eclipse.org/security/
+      column3:
+        title: "Misc"
+        links:
+        - text: Catena-X Website
+          link: https://catena-x.net/de/
+
+
+
